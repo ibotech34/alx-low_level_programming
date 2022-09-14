@@ -1,4 +1,4 @@
-$#include "main.h"
+#include "main.h"
 /**         
  * main - initializing
  *      
@@ -6,7 +6,7 @@ $#include "main.h"
 */   
 int main(void)
 {
-putchar('');
+putchar('r');
 _putchar('p');
 _putchar('u');
 _putchar('t');
