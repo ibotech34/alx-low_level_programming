@@ -1,16 +1,20 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
-*print_most_numbers - print numbers without 2 and 4
-*
-*/
+ * print_most_numbers - prints
+ *
+ * Return: void
+ */
+
+
 void print_most_numbers(void)
 {
-	int a;
+	char c;
 
-	for (a = '0'; a <= '9'; a++)
-
-		if (a != '2' && a != '4')
-			_putchar(a);
+	for (c = '0'; c <= '9'; c++)
+	{
+		if (!(c == '2' || c == '4'))
+			_putchar(c);
+	}
 	_putchar('\n');
 }
