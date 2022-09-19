@@ -1,18 +1,13 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * main - check the code
+ * reset_to_98 - function with one argument
+ * @n: int type pointer n
  *
- * Return: Always 0.
+ * Description: using pointer as parameter to update value it points to 98
+ * Return: value
  */
-int.main (void) 
+void reset_to_98(int *n)
 {
-int MyNum = 98;
-int *ip;
-ip = &MyNum;
-prinf("%p", *ip);
-printf("%d", *ip);
-return 0;
+	*n = 98;
 }
-
-
