@@ -1,19 +1,15 @@
-#include "bootcamp.h"
-/**
- * _memset - fills string with constant char b upto n bytes
- * @s: input pointer to string
- * @b: constant char
- * @n: number of bytes
- * Return: pointer to s string
- */
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i = 0;
-
-	while (i < n)
-	{
-		s[i] = b;
-		i++;
-	}
-	return (s);
+char* strcat(char *a, char *b) {
+    while (*a++);
+    a--;
+    while (*a++ = *b++);
+    return a;
 }
+
+char *str_a = "a string";
+char *str_b = "a long long long string";
+char *str_c = "yet another string";
+char *result;
+
+result = strcat(str_a, str_b);
+result = strcat(result, str_c);
+
